@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA6FCF5515D44924008AE5AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6FCF5415D44924008AE5AB /* Cocoa.framework */; };
+		AA6FCF5F15D44924008AE5AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA6FCF5D15D44924008AE5AB /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA6FCF5115D44924008AE5AB /* TextMate2IMFix.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextMate2IMFix.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6FCF5415D44924008AE5AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AA6FCF5715D44924008AE5AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA6FCF5815D44924008AE5AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AA6FCF5915D44924008AE5AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA6FCF5C15D44924008AE5AB /* TextMate2IMFix-Info.plist */ = {isa = PBXFileReference; path = "TextMate2IMFix-Info.plist"; sourceTree = "<group>"; };
+		AA6FCF5E15D44924008AE5AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA6FCF6015D44924008AE5AB /* TextMate2IMFix-Prefix.pch */ = {isa = PBXFileReference; path = "TextMate2IMFix-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA6FCF4E15D44924008AE5AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6FCF5515D44924008AE5AB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA6FCF4615D44924008AE5AB = {
+			isa = PBXGroup;
+			children = (
+				AA6FCF5A15D44924008AE5AB /* TextMate2IMFix */,
+				AA6FCF5315D44924008AE5AB /* Frameworks */,
+				AA6FCF5215D44924008AE5AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA6FCF5215D44924008AE5AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA6FCF5115D44924008AE5AB /* TextMate2IMFix.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA6FCF5315D44924008AE5AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6FCF5415D44924008AE5AB /* Cocoa.framework */,
+				AA6FCF5615D44924008AE5AB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA6FCF5615D44924008AE5AB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6FCF5715D44924008AE5AB /* AppKit.framework */,
+				AA6FCF5815D44924008AE5AB /* CoreData.framework */,
+				AA6FCF5915D44924008AE5AB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AA6FCF5A15D44924008AE5AB /* TextMate2IMFix */ = {
+			isa = PBXGroup;
+			children = (
+				AA6FCF5B15D44924008AE5AB /* Supporting Files */,
+			);
+			path = TextMate2IMFix;
+			sourceTree = "<group>";
+		};
+		AA6FCF5B15D44924008AE5AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA6FCF5C15D44924008AE5AB /* TextMate2IMFix-Info.plist */,
+				AA6FCF5D15D44924008AE5AB /* InfoPlist.strings */,
+				AA6FCF6015D44924008AE5AB /* TextMate2IMFix-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA6FCF5015D44924008AE5AB /* TextMate2IMFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA6FCF6315D44924008AE5AB /* Build configuration list for PBXNativeTarget "TextMate2IMFix" */;
+			buildPhases = (
+				AA6FCF4D15D44924008AE5AB /* Sources */,
+				AA6FCF4E15D44924008AE5AB /* Frameworks */,
+				AA6FCF4F15D44924008AE5AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextMate2IMFix;
+			productName = TextMate2IMFix;
+			productReference = AA6FCF5115D44924008AE5AB /* TextMate2IMFix.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA6FCF4815D44924008AE5AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = AA6FCF4B15D44924008AE5AB /* Build configuration list for PBXProject "TextMate2IMFix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA6FCF4615D44924008AE5AB;
+			productRefGroup = AA6FCF5215D44924008AE5AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA6FCF5015D44924008AE5AB /* TextMate2IMFix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA6FCF4F15D44924008AE5AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6FCF5F15D44924008AE5AB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA6FCF4D15D44924008AE5AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA6FCF5D15D44924008AE5AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA6FCF5E15D44924008AE5AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA6FCF6115D44924008AE5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA6FCF6215D44924008AE5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA6FCF6415D44924008AE5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextMate2IMFix/TextMate2IMFix-Prefix.pch";
+				INFOPLIST_FILE = "TextMate2IMFix/TextMate2IMFix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AA6FCF6515D44924008AE5AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextMate2IMFix/TextMate2IMFix-Prefix.pch";
+				INFOPLIST_FILE = "TextMate2IMFix/TextMate2IMFix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA6FCF4B15D44924008AE5AB /* Build configuration list for PBXProject "TextMate2IMFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6FCF6115D44924008AE5AB /* Debug */,
+				AA6FCF6215D44924008AE5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA6FCF6315D44924008AE5AB /* Build configuration list for PBXNativeTarget "TextMate2IMFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6FCF6415D44924008AE5AB /* Debug */,
+				AA6FCF6515D44924008AE5AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA6FCF4815D44924008AE5AB /* Project object */;
+}
