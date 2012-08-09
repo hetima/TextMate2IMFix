@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		AA6FCF5515D44924008AE5AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6FCF5415D44924008AE5AB /* Cocoa.framework */; };
 		AA6FCF5F15D44924008AE5AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA6FCF5D15D44924008AE5AB /* InfoPlist.strings */; };
+		AA6FCF6B15D449BF008AE5AB /* HTMFMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6FCF6A15D449BF008AE5AB /* HTMFMain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA6FCF5115D44924008AE5AB /* TextMate2IMFix.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextMate2IMFix.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6FCF5115D44924008AE5AB /* TextMate2IMFix.tmplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextMate2IMFix.tmplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6FCF5415D44924008AE5AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AA6FCF5715D44924008AE5AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AA6FCF5815D44924008AE5AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AA6FCF5915D44924008AE5AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AA6FCF5C15D44924008AE5AB /* TextMate2IMFix-Info.plist */ = {isa = PBXFileReference; path = "TextMate2IMFix-Info.plist"; sourceTree = "<group>"; };
+		AA6FCF5C15D44924008AE5AB /* TextMate2IMFix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextMate2IMFix-Info.plist"; sourceTree = "<group>"; };
 		AA6FCF5E15D44924008AE5AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA6FCF6015D44924008AE5AB /* TextMate2IMFix-Prefix.pch */ = {isa = PBXFileReference; path = "TextMate2IMFix-Prefix.pch"; sourceTree = "<group>"; };
+		AA6FCF6015D44924008AE5AB /* TextMate2IMFix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextMate2IMFix-Prefix.pch"; sourceTree = "<group>"; };
+		AA6FCF6915D449BF008AE5AB /* HTMFMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMFMain.h; sourceTree = "<group>"; };
+		AA6FCF6A15D449BF008AE5AB /* HTMFMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMFMain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +49,7 @@
 		AA6FCF5215D44924008AE5AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA6FCF5115D44924008AE5AB /* TextMate2IMFix.bundle */,
+				AA6FCF5115D44924008AE5AB /* TextMate2IMFix.tmplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				AA6FCF5B15D44924008AE5AB /* Supporting Files */,
+				AA6FCF6915D449BF008AE5AB /* HTMFMain.h */,
+				AA6FCF6A15D449BF008AE5AB /* HTMFMain.m */,
 			);
 			path = TextMate2IMFix;
 			sourceTree = "<group>";
@@ -105,7 +110,7 @@
 			);
 			name = TextMate2IMFix;
 			productName = TextMate2IMFix;
-			productReference = AA6FCF5115D44924008AE5AB /* TextMate2IMFix.bundle */;
+			productReference = AA6FCF5115D44924008AE5AB /* TextMate2IMFix.tmplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA6FCF6B15D449BF008AE5AB /* HTMFMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +176,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -197,8 +203,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -216,24 +222,32 @@
 		AA6FCF6415D44924008AE5AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextMate2IMFix/TextMate2IMFix-Prefix.pch";
 				INFOPLIST_FILE = "TextMate2IMFix/TextMate2IMFix-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = tmplugin;
 			};
 			name = Debug;
 		};
 		AA6FCF6515D44924008AE5AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextMate2IMFix/TextMate2IMFix-Prefix.pch";
 				INFOPLIST_FILE = "TextMate2IMFix/TextMate2IMFix-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = tmplugin;
 			};
 			name = Release;
 		};
@@ -256,6 +270,7 @@
 				AA6FCF6515D44924008AE5AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
