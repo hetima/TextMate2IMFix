@@ -57,8 +57,8 @@ static void HTMF_setMarkedText(id self, SEL _cmd, id str, NSRange aRange)
 - (void)setup
 {
     NSBundle* bundle=[NSBundle mainBundle];
-    NSInteger appVesion=[[bundle objectForInfoDictionaryKey:@"CFBundleVersion"]integerValue];
-    if (appVesion<9147) {
+    NSInteger appVersion=[[bundle objectForInfoDictionaryKey:@"CFBundleVersion"]integerValue];
+    if (appVersion<9147) {
         NSLog(@"TextMate2IMFix is TextMate 2 only.");
         return;
     }
