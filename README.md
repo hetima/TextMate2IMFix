@@ -1,6 +1,7 @@
 #TextMate2IMFix
 
 __release 9278 でこの問題は修正されました。このプラグインは不要です。__
+__This problem was fixed.__
 
 TextMate 2 の日本語入力を改善する tmplugin です。変換確定時の return など一応ちゃんと機能するようになります。
 
